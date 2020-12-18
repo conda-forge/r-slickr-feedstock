@@ -1,4 +1,4 @@
-{% set version = '0.4.9' %}
+{% set version = "0.5.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/slickR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/slickR/slickR_{{ version }}.tar.gz
-  sha256: 3e978656f017e94b8cd3a624276b99e983c7db9ff1718cc9863b00fc00fdb4ea
+  sha256: f7d996fd6d026148c1ad0acbb8c2abb85b343965e8029a19de3c45d87634b2ff
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -46,14 +46,11 @@ test:
 about:
   home: https://github.com/metrumresearchgroup/slickR
   license: MIT
-  summary: Create and customize interactive carousels using the 'Slick' JavaScript library and
-    the 'htmlwidgets' package. The carousels can contain plots produced in R, images,
-    'iframes', videos and other 'htmlwidgets'.  These carousels can be created directly
-    from the R console, and viewed in the 'RStudio' internal viewer, in Shiny apps and
-    R Markdown documents.
+  summary: Create and customize interactive carousels using the 'Slick' JavaScript library and the 'htmlwidgets' package. The carousels can contain plots produced in R, images, 'iframes', videos and other 'htmlwidgets'.  These carousels can be created directly from the R console, and viewed in the 'RStudio' internal viewer,
+    in Shiny apps and R Markdown documents.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
