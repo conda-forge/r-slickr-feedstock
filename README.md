@@ -1,11 +1,11 @@
-About r-slickr
-==============
+About r-slickr-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-slickr-feedstock/blob/main/LICENSE.txt)
 
 Home: https://yonicd.github.io/slickR
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-slickr-feedstock/blob/main/LICENSE.txt)
 
 Summary: Create and customize interactive carousels using the 'Slick' JavaScript library and the 'htmlwidgets' package. The carousels can contain plots produced in R, images, 'iframes', videos and other 'htmlwidgets'.  These carousels can be created directly from the R console, and viewed in the 'RStudio' internal viewer, in Shiny apps and R Markdown documents.
 
